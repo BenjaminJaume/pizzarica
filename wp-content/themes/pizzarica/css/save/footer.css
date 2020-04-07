@@ -1,0 +1,62 @@
+.footer-top {
+  height: 75px;
+  background-image: url("../pictures/background-sprinkles.jpg");
+  background-position: center;
+  border-bottom: 2px solid var(--vanilla);
+}
+
+.color-filter {
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-0-75) 0%,
+    var(--transparent) 100%
+  );
+}
+
+.social-media-icon {
+  list-style-type: none;
+  display: inline-flex;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+}
+
+.social-media-icon i {
+  color: var(--vanilla);
+  font-size: 32px;
+  margin: 0 8px;
+}
+
+.social-media-icon li:first-child i {
+  margin-left: 0;
+}
+
+.social-media-icon li:last-child i {
+  margin-right: 0;
+}
+
+.social-media-icon a:hover {
+  text-decoration: none;
+}
+
+.facebook-icon:hover {
+  color: var(--facebook);
+}
+
+.maps-icon:hover {
+  color: var(--maps);
+}
+
+.instagram-icon:hover {
+  color: var(--instagram);
+}
+
+.messenger-icon:hover {
+  color: var(--messenger);
+}
+
+.mail-icon:hover {
+  color: var(--mail);
+}

@@ -1,0 +1,81 @@
+/*
+Footer stylesheet
+Author: Benjamin Jaume
+*/
+
+@use 'colors';
+
+.footer-top {
+  height: 75px;
+  background-image: url("../pictures/background-sprinkles.jpg");
+  background-position: center;
+  border-bottom: 2px solid colors.$vanilla;
+}
+
+.logo-lg {
+  width: 128px;
+  height: 128px;
+}
+
+.color-filter {
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to bottom,
+    colors.$white-0-75 0%,
+    colors.$transparent 100%
+  );
+}
+
+.social-media-icon {
+  list-style-type: none;
+  display: inline-flex;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+
+  i {
+    color: colors.$vanilla;
+    font-size: 32px;
+    margin: 0 8px;
+  }
+
+  li {
+    &:first-child {
+      i {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      i {
+        margin-right: 0;
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .facebook-icon:hover {
+    color: colors.$facebook;
+  }
+
+  .maps-icon:hover {
+    color: colors.$maps;
+  }
+
+  .instagram-icon:hover {
+    color: colors.$instagram;
+  }
+
+  .messenger-icon:hover {
+    color: colors.$messenger;
+  }
+
+  .mail-icon:hover {
+    color: colors.$mail;
+  }
+}

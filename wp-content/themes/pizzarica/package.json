@@ -1,0 +1,13 @@
+{
+  "name": "bajozero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss:css",
+    "scss-comp": "sass --watch scss:css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

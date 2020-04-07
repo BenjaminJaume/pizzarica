@@ -1,0 +1,74 @@
+/*
+
+Custom stylesheet
+
+Styles applying to the navbar
+
+Author: Benjamin Jaume
+
+*/
+
+.bg-light {
+  background-color: var(--vanilla) !important;
+}
+
+.navbar-logo {
+  height: 48px;
+  width: 48px;
+}
+
+.navbar a {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-nav,
+.navbar-brand {
+  font-size: 1.25rem;
+  /* font-weight: 350; */
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: var(--green);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--green-0-75);
+}
+
+/* Active item */
+.navbar-light .navbar-nav .active > .nav-link {
+  color: var(--green);
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+}
+
+.navbar-nav > li {
+  float: left;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after,
+.navbar-light .navbar-nav .active > .nav-link:after {
+  border-bottom: 2px solid var(--pink);
+  bottom: -2px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  max-width: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar {
+  border-bottom: 2px solid var(--chocolate-0-75);
+}

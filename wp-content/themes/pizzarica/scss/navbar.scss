@@ -1,0 +1,78 @@
+/*
+Navigation Bar stylesheet
+Author: Benjamin Jaume
+*/
+
+@use 'colors';
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+%bottom-border {
+  border-bottom: 2px solid colors.$pink;
+  bottom: -2px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  max-width: 100px;
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background-color: colors.$vanilla !important;
+}
+
+.navbar-light {
+  border-bottom: 2px solid colors.$chocolate-0-75;
+  .navbar-logo {
+    height: 48px;
+    width: 48px;
+  }
+  .navbar-brand {
+    &:focus {
+      color: colors.$green;
+    }
+    &:hover {
+      color: colors.$green;
+    }
+  }
+
+  .navbar-nav {
+    font-size: 1.25rem;
+
+    a {
+      @include transition(all 300ms ease-in-out);
+    }
+    .nav-link {
+      text-align: center;
+      &:hover {
+        color: colors.$green-0-75;
+        &::after {
+          @extend %bottom-border;
+        }
+      }
+    }
+
+    .active > .nav-link {
+      color: colors.$green;
+
+      &::after {
+        @extend %bottom-border;
+      }
+    }
+  }
+
+  .navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+}
