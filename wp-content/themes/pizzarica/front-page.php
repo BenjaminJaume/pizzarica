@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $text_top = get_field('text_top');
 $carousel = get_field('carousel');
@@ -51,12 +51,12 @@ get_header();
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-interval="10000">
-                            <?php 
-                                if($carousel['first']['picture']['ID']) {
-                                    echo wp_get_attachment_image($carousel['first']['picture']['ID'], '', false, 'class=img-cover slumber');
-                                } else {
-                                    echo wp_get_attachment_image($carousel['first']['picture'], '', false, 'class=img-cover slumber');
-                                }
+                            <?php
+                            if ($carousel['first']['picture']['ID']) {
+                                echo wp_get_attachment_image($carousel['first']['picture']['ID'], '', false, 'class=img-cover slumber');
+                            } else {
+                                echo wp_get_attachment_image($carousel['first']['picture'], '', false, 'class=img-cover slumber');
+                            }
                             ?>
                             <div class="carousel-caption d-sm-block bg-text-1 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
@@ -66,18 +66,18 @@ get_header();
                                 </h3>
                                 <p>
                                     <span>
-                                         <?php echo $carousel['first']['caption'] ?>
+                                        <?php echo $carousel['first']['caption'] ?>
                                     </span>
                                 </p>
                             </div>
                         </div>
                         <div class="carousel-item" data-interval="10000">
-                            <?php 
-                                if($carousel['second']['picture']['ID']) {
-                                    echo wp_get_attachment_image($carousel['second']['picture']['ID'], '', false, 'class=img-cover slumber');
-                                } else {
-                                    echo wp_get_attachment_image($carousel['second']['picture'], '', false, 'class=img-cover slumber');
-                                }
+                            <?php
+                            if ($carousel['second']['picture']['ID']) {
+                                echo wp_get_attachment_image($carousel['second']['picture']['ID'], '', false, 'class=img-cover slumber');
+                            } else {
+                                echo wp_get_attachment_image($carousel['second']['picture'], '', false, 'class=img-cover slumber');
+                            }
                             ?>
                             <div class="carousel-caption d-sm-block bg-text-2 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
@@ -93,12 +93,12 @@ get_header();
                             </div>
                         </div>
                         <div class="carousel-item" data-interval="10000">
-                            <?php 
-                                if($carousel['third']['picture']['ID']) {
-                                    echo wp_get_attachment_image($carousel['third']['picture']['ID'], '', false, 'class=img-cover slumber');
-                                } else {
-                                    echo wp_get_attachment_image($carousel['third']['picture'], '', false, 'class=img-cover slumber');
-                                }
+                            <?php
+                            if ($carousel['third']['picture']['ID']) {
+                                echo wp_get_attachment_image($carousel['third']['picture']['ID'], '', false, 'class=img-cover slumber');
+                            } else {
+                                echo wp_get_attachment_image($carousel['third']['picture'], '', false, 'class=img-cover slumber');
+                            }
                             ?>
                             <div class="carousel-caption d-sm-block bg-text-3 text-vanilla">
                                 <h3 class="text-uppercase mb-1">
@@ -143,12 +143,12 @@ get_header();
         </div>
         <div class="col-sm-6 col-lg-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
-                <?php 
-                    if($row_1['picture']['ID']) {
-                        echo wp_get_attachment_image($row_1['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    } else {
-                        echo wp_get_attachment_image($row_1['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    }
+                <?php
+                if ($row_1['picture']['ID']) {
+                    echo wp_get_attachment_image($row_1['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                } else {
+                    echo wp_get_attachment_image($row_1['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                }
                 ?>
             </div>
         </div>
@@ -169,11 +169,11 @@ get_header();
         <div class="col-sm-6 col-lg-5 order-sm-1" data-aos="slide-left" data-aos-once="true">
             <div class="slumber">
                 <?php
-                    if($row_2['picture']['ID']) {
-                        echo wp_get_attachment_image($row_2['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    } else {
-                        echo wp_get_attachment_image($row_2['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    }
+                if ($row_2['picture']['ID']) {
+                    echo wp_get_attachment_image($row_2['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                } else {
+                    echo wp_get_attachment_image($row_2['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                }
                 ?>
             </div>
         </div>
@@ -194,125 +194,125 @@ get_header();
         <div class="col-sm-6 col-lg-5" data-aos="slide-right" data-aos-once="true">
             <div class="slumber">
                 <?php
-                    if($row_3['picture']['ID']) {
-                        echo wp_get_attachment_image($row_3['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    } else {
-                        echo wp_get_attachment_image($row_3['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
-                    }
+                if ($row_3['picture']['ID']) {
+                    echo wp_get_attachment_image($row_3['picture']['ID'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                } else {
+                    echo wp_get_attachment_image($row_3['picture'], [500, 500], false, 'class=shadow-picture-lg img-fluid mx-auto');
+                }
                 ?>
             </div>
         </div>
     </div>
-</div>
+    </>
 
-<div class="container mt-5">
-    <div class="card-deck card-deck-front-page justify-content-center mb-3 text-center">
-        <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-once="true">
-            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
-                <h4 class="my-0 font-weight-light">
-                    <?php echo $card_1['title']; ?>
-                </h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-                <a href="/bajozero/flavors/" alt="">
-                    <?php
-                        if($card_1['picture']['ID']) {
+    <div class="container mt-5">
+        <div class="card-deck card-deck-front-page justify-content-center mb-3 text-center">
+            <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-once="true">
+                <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
+                    <h4 class="my-0 font-weight-light">
+                        <?php echo $card_1['title']; ?>
+                    </h4>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <a href="/bajozero/flavors/" alt="">
+                        <?php
+                        if ($card_1['picture']['ID']) {
                             echo wp_get_attachment_image($card_1['picture']['ID'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         } else {
                             echo wp_get_attachment_image($card_1['picture'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         }
-                    ?>
-                </a>
+                        ?>
+                    </a>
 
-                <div class="mt-4">
-                    <p class="text-green mb-1">Contains:</p>
+                    <div class="mt-4">
+                        <p class="text-green mb-1">Contains:</p>
 
-                    <ul class="list-unstyled ">
-                        <?php foreach( $card_1['list'] as $items ): ?>
-                            <li><?php echo $items; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div class="mt-auto">
-                    <div class="card-title mt-0 pricing-card-title">
-                        <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_1['price']['colones']; ?></span>
-                        <span class="text-muted">(&#36;<?php echo $card_1['price']['dollars']; ?>)</span>
+                        <ul class="list-unstyled ">
+                            <?php foreach ($card_1['list'] as $items) : ?>
+                                <li><?php echo $items; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    <div class="mt-auto">
+                        <div class="card-title mt-0 pricing-card-title">
+                            <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_1['price']['colones']; ?></span>
+                            <span class="text-muted">(&#36;<?php echo $card_1['price']['dollars']; ?>)</span>
+                        </div>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
-            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
-                <h4 class="my-0 font-weight-light">
-                    <?php echo $card_2['title']; ?>
-                </h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-                <a href="/bajozero/flavors/" alt="">
-                    <?php
-                        if($card_2['picture']['ID']) {
+            <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+                <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
+                    <h4 class="my-0 font-weight-light">
+                        <?php echo $card_2['title']; ?>
+                    </h4>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <a href="/bajozero/flavors/" alt="">
+                        <?php
+                        if ($card_2['picture']['ID']) {
                             echo wp_get_attachment_image($card_2['picture']['ID'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         } else {
                             echo wp_get_attachment_image($card_2['picture'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         }
-                    ?>
-                </a>
+                        ?>
+                    </a>
 
-                <div class="mt-4">
-                    <p class="text-pink mb-1">Contains:</p>
+                    <div class="mt-4">
+                        <p class="text-pink mb-1">Contains:</p>
 
-                    <ul class="list-unstyled ">
-                        <?php foreach( $card_2['list'] as $items ): ?>
-                            <li><?php echo $items; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div class="mt-auto">
-                    <div class="card-title mt-0 pricing-card-title">
-                        <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_2['price']['colones']; ?></span>
-                        <span class="text-muted">(&#36;<?php echo $card_2['price']['dollars']; ?>)</span>
+                        <ul class="list-unstyled ">
+                            <?php foreach ($card_2['list'] as $items) : ?>
+                                <li><?php echo $items; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    <div class="mt-auto">
+                        <div class="card-title mt-0 pricing-card-title">
+                            <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_2['price']['colones']; ?></span>
+                            <span class="text-muted">(&#36;<?php echo $card_2['price']['dollars']; ?>)</span>
+                        </div>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
-            <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
-                <h4 class="my-0 font-weight-light">
-                    <?php echo $card_3['title']; ?>
-                </h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-                <a href="/bajozero/flavors/" alt="">
-                    <?php
-                        if($card_3['picture']['ID']) {
+            <div class="card mb-4 shadow-sm" data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
+                <div class="card-header bg-<?php echo strtolower($cards['top_color']); ?> rounded-top">
+                    <h4 class="my-0 font-weight-light">
+                        <?php echo $card_3['title']; ?>
+                    </h4>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <a href="/bajozero/flavors/" alt="">
+                        <?php
+                        if ($card_3['picture']['ID']) {
                             echo wp_get_attachment_image($card_3['picture']['ID'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         } else {
                             echo wp_get_attachment_image($card_3['picture'], [500, 500], false, 'class=rounded img-fluid frame-hover');
                         }
-                    ?>
-                </a>
+                        ?>
+                    </a>
 
-                <div class="mt-4">
-                    <p class="text-orange mb-1">Contains:</p>
+                    <div class="mt-4">
+                        <p class="text-orange mb-1">Contains:</p>
 
-                    <ul class="list-unstyled ">
-                        <?php foreach( $card_3['list'] as $items ): ?>
-                            <li><?php echo $items; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div class="mt-auto">
-                    <div class="card-title mt-0 pricing-card-title">
-                        <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_3['price']['colones']; ?></span>
-                        <span class="text-muted">(&#36;<?php echo $card_3['price']['dollars']; ?>)</span>
+                        <ul class="list-unstyled ">
+                            <?php foreach ($card_3['list'] as $items) : ?>
+                                <li><?php echo $items; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
-                    <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    <div class="mt-auto">
+                        <div class="card-title mt-0 pricing-card-title">
+                            <span class="h2 mr-0 mr-md-1">&#8353;<?php echo $card_3['price']['colones']; ?></span>
+                            <span class="text-muted">(&#36;<?php echo $card_3['price']['dollars']; ?>)</span>
+                        </div>
+                        <a href="/bajozero/flavors/" alt="" class="btn btn-lg btn-block btn-vanilla rounded-0 hvr-underline-from-center">Try it</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
