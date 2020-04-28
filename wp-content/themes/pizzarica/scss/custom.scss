@@ -3,9 +3,9 @@
 $text-shadow: 2px 2px black;
 $quicksand-font-family: "Quicksand", Calibri, "Trebuchet MS", sans-serif,
   cursive;
-$impact-font-family: "Impact", "Quicksand", Calibri, "Trebuchet MS", sans-serif,
-  cursive;
-$yellowtail-font-family: "Yellowtail", "Quicksand", Calibri, "Trebuchet MS",
+$impact-font-family: "Garamond", "Quicksand", Calibri, "Trebuchet MS",
+  sans-serif, cursive;
+$yellowtail-font-family: "phyllisD", "Quicksand", Calibri, "Trebuchet MS",
   sans-serif, cursive;
 
 @mixin featurette($color1, $color2) {

@@ -5,6 +5,8 @@ Author: Benjamin Jaume
 
 @use 'colors';
 
+$logo-size: 64px;
+
 @mixin transition($property) {
   -webkit-transition: $property;
   -o-transition: $property;
@@ -23,22 +25,38 @@ Author: Benjamin Jaume
   margin: auto;
 }
 
-.bg-light {
-  background-color: colors.$vanilla !important;
+.bg-dark {
+  background-color: colors.$black !important;
 }
 
-.navbar-light {
-  border-bottom: 2px solid colors.$chocolate-0-75;
-  .navbar-logo {
-    height: 48px;
-    width: 48px;
+.navbar-dark {
+  &::after {
+    background: linear-gradient(
+      to right,
+      colors.$costa-rica-blue 1 / 6 * 100%,
+      colors.$white 1 / 6 * 100%,
+      colors.$white 2 / 6 * 100%,
+      colors.$costa-rica-red 2 / 6 * 100%,
+      colors.$costa-rica-red 4 / 6 * 100%,
+      colors.$white 4 / 6 * 100%,
+      colors.$white 5 / 6 * 100%,
+      colors.$costa-rica-blue 5 / 6 * 100%,
+      colors.$costa-rica-blue 100%
+    );
+    position: absolute;
+    content: "";
+    height: 4px;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
+
   .navbar-brand {
-    &:focus {
-      color: colors.$green;
-    }
-    &:hover {
-      color: colors.$green;
+    padding-left: $logo-size;
+
+    img {
+      height: $logo-size;
+      width: $logo-size;
     }
   }
 
@@ -48,10 +66,18 @@ Author: Benjamin Jaume
     a {
       @include transition(all 300ms ease-in-out);
     }
+
+    .nav-item {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
     .nav-link {
+      color: colors.$green;
       text-align: center;
       &:hover {
-        color: colors.$green-0-75;
+        color: colors.$orange;
         &::after {
           @extend %bottom-border;
         }
@@ -75,4 +101,54 @@ Author: Benjamin Jaume
   .navbar-toggler {
     border-color: transparent;
   }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575px) {
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Column management */
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-dark {
+    .navbar-brand {
+      padding-left: 0;
+    }
+  }
+
+  .navbar-dark {
+    .navbar-nav {
+      .nav-item {
+        &:first-child {
+          margin-left: -$logo-size;
+        }
+      }
+    }
+  }
+}
+
+/* Column management */
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Column management */
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
